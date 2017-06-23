@@ -178,6 +178,9 @@
           <root url="jar://$USER_HOME$/.sdkman/candidates/grails/2.3.11/lib/org.apache.ant/ant/jars/ant-1.8.4.jar!/" />
           <root url="jar://$USER_HOME$/.sdkman/candidates/grails/2.3.11/lib/jline/jline/jars/jline-2.12.jar!/" />
           <root url="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.27/mysql-connector-java-5.1.27.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/net/sf/ehcache/ehcache/2.9.0/ehcache-2.9.0.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/3.2.9.RELEASE/spring-security-web-3.2.9.RELEASE.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/3.2.9.RELEASE/spring-security-core-3.2.9.RELEASE.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>

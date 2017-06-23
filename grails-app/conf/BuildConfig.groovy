@@ -62,6 +62,7 @@ grails.project.dependency.resolution = {
         compile ':cache:1.1.7'
         compile ':heroku:1.0.1'
         compile ':cloud-support:1.0.11'
+        compile "org.grails.plugins:spring-security-core:2.0.0"
 
         // plugins needed at runtime but not for compilation
         runtime ":hibernate:3.6.10.16" // or ":hibernate4:4.3.5.4"

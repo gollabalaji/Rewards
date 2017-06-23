@@ -1,3 +1,4 @@
+import com.Rewards.auth.*
 import rewards.Product
 
 class BootStrap {
@@ -21,6 +22,13 @@ class BootStrap {
         new rewards.Customer(phone: 4085551212, firstName: "Ida", lastName: "Goodson", totalPoints: 4).save()
         new rewards.Customer(phone: 8015551234, firstName: "Bumble Bee", lastName: "Smith", totalPoints: 5).save()
         new rewards.Customer(phone: 4315551212, firstName: "Sippie", lastName: "Wallace", totalPoints: 4).save()
+
+        def adminRole = Role.findOrSaveWhere(authority: 'ROLE_ADMIN')
+        def user = User.findOrSaveWhere(username: 'bgolla@wustl.edu', password: 'krupalaji', firstName: 'Balaji', lastName: 'Golla', emailAddress: 'bgolla@wustl.edu')
+
+        if(( !user.authorities.contains(adminRole))) {
+            UserRole.create(user, adminRole, true)
+        }
     }
     def destroy = {
     }
